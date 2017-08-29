@@ -45,3 +45,12 @@ fun typeArgumentExtendNumber() {
     println(listOf(1, 2, 3).sum()) // println(listOf("1","2", "3").sum()) compiler will complain about the arguments supplied "1","2","3"
 }
 
+/*
+Making type parameters non-null
+ */
+class Processor<T : Any> {
+    fun process(value: T) {
+
+    }
+}
+
